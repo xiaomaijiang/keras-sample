@@ -20,7 +20,7 @@ y_train = keras.utils.to_categorical(y_train, 10)
 y_test = keras.utils.to_categorical(y_test, 10)
 
 model = Sequential()
-model.add(Dense(512, activation='relu', input_shape=(784,)))
+model.add(Dense(512, activation='relu', input_shape=x_train.shape[1:]))
 model.add(Dropout(0.2))
 model.add(Dense(512, activation='relu'))
 model.add(Dropout(0.2))
