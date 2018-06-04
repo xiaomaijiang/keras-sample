@@ -77,4 +77,4 @@ else:
                         validation_data=(x_test, y_test),
                         workers=4)
 
-model.save('../models/cifar10_cnn.h5')
+model.save('../../models/cifar10_cnn.h5')
