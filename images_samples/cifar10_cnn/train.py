@@ -42,7 +42,7 @@ opt = keras.optimizers.rmsprop(lr=0.0001, decay=1e-6)
 
 model.compile(loss='categorical_crossentropy',
               optimizer=opt,
-              metrics=['accu吧racy'])
+              metrics=['accuracy'])
 
 x_train = x_train.astype('float32')
 x_test = x_test.astype('float32')
